@@ -72,7 +72,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="List Specialities" id="FPf-HH-gUU">
-                        <barButtonItem key="leftBarButtonItem" title="Change city" id="fsN-OK-Wcx"/>
+                        <barButtonItem key="leftBarButtonItem" title="Change city" id="fsN-OK-Wcx">
+                            <connections>
+                                <segue destination="u8N-0h-DVv" kind="show" identifier="citySelection" id="2s8-VU-P49"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="searchDisplayController" destination="Xhf-bq-eSg" id="uuO-ME-5wK"/>
@@ -248,4 +252,7 @@
             <point key="canvasLocation" x="-238" y="178"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="2s8-VU-P49"/>
+    </inferredMetricsTieBreakers>
 </document>

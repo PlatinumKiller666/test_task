@@ -42,10 +42,6 @@ class DoctorCell: UITableViewCell {
             self.photo.image = img
         } else {
             
-            let downloader = ImageDownloader()
-            let urlRequest = URLRequest(url: URL(string: data.Img)!)
-            
-            
             Alamofire.request(data.Img).responseImage {[weak self, data]  response in
                 debugPrint(response)
                 
@@ -60,15 +56,6 @@ class DoctorCell: UITableViewCell {
                     }
                 }
             }
-//            downloader.download(urlRequest) {[weak self] response in
-//
-//                if let image = response.result.value {
-//                    DoctorCell.imageCache.add(image, withIdentifier: data.Img)
-//                    if data.Img.compare((self?.docData?.Img)!) == ComparisonResult.orderedSame {
-//                        self?.photo.image = image
-//                    }
-//                }
-//            }
         }
     }
 }
