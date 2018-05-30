@@ -1,0 +1,14 @@
+/* 
+  Localized.strings
+  test app
+
+  Created by iosnuk on 29.05.2018.
+  Copyright © 2018 PlatinumKiller. All rights reserved.
+*/
+
+"In city" = "Вы в городе?";
+"YES" = "Да";
+"NO" = "Нет";
+"OK" = "Ок";
+"Select city" = "Выберете город";
+
