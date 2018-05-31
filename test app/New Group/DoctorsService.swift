@@ -61,7 +61,7 @@ class DoctorsService: NSObject {
     
     func getListOfDoctors(complection:@escaping () -> Void) -> Void {
         
-        if let _ = dataRequest, doctors.count >= totalCount && totalCount != -1 {
+        if (dataRequest != nil) || (doctors.count >= totalCount && totalCount != -1) {
             return
         }
         
